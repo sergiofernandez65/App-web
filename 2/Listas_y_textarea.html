@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title> Formulario con listas y comentarios</title>
+    </head>
+    <body>
+        <h2>Formulario con listas y comentarios</h2>
+        <form>
+            <select name="fruta" id="fruta">
+                <option value="">--------------</option>
+        
+            <optgroup label="Temporada">
+                <option value="banana">Banana</option>
+                <option value="naranja">Naranja</option>
+            </optgroup>
+            <optgroup label="Tropicales">
+                <option value="fresa">fresa</option>
+                <option value="piña">Piña</option>
+
+            </optgroup>
+            </select>
+            <br>
+            <br>
+            <label>Frutas datalist</label>
+            <input list="frutas" name="frutas"/>
+            <datalist id="frutas">
+                <option label="banana" value="banana"></option>
+                <option label="naranja" value="naranja"></option>
+                <option label="fresa" value="fresa"></option>
+                <option label="piña" value="piña"></option>
+            </datalist>
+        </form>
+    </body>
+</html>
