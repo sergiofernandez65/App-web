@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>2.4.1 Formularios</title>
+    </head>
+    <body>
+        <h2>Formularios</h2>
+        <form action="procesar.php" method="post">
+            <fieldset>
+                <legend>Personaje</legend>
+                <label>Superheroe favorito</label>
+                <br>
+                <input list="Superheroes" name="Superheroes" placeholder="Elige el Superheroe"/>
+                <datalist id="Superheroe">
+                <option label="Iron man" value="Iron man"></option>
+                <option label="Hulk" value="Hulk"></option>
+                </datalist>
+                <br>
+                <input type="radio" name="color" value="azul"/> Azul
+
+
+            </fieldset>
+            <br>
+            <fieldset>
+            <legend>Datos alumno</legend>
+            <label>Nombre:</label>
+            <input type=""text name="nombre"/>
+            <br>
+            <br>
+            <label>Telefono:</label> 
+            
+            <input type=""text name="telefono"/>
+
+            </fieldset>
+
+            
+
+        </form>
+    </body>
+</html>
