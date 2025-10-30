@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>2.4.2 Formularios avanzado</title>
+    </head>
+    <body>
+        <h2>Formulario avanzado</h2>
+        <form action="procesar.php" method="post">
+            <fieldset>
+                <legend>Personaje</legend>
+                 <label>Superheroe favorito</label>
+                <br>
+                <input list="Superheroes" name="Superheroes" placeholder="Elige el Superheroe"/>
+                <datalist id="Superheroe">
+                <option label="Iron man" value="Iron man"></option>
+                <option label="Hulk" value="Hulk"></option>
+                </datalist>
+                <br>
+                <input type="radio" name="color" value="azul"/> Azul
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Datos de contacto</legend>
+            <label>Nombre:</label>
+            <br>
+            <input type=""text name="nombre" placeholder="Nombre Apellido"/>
+            <br>
+            <br>
+            <label>Telefono:</label> 
+            <br>
+            <input type=""text name="telefono"/>
+            <br>
+            <br>
+            <label>Fecha</label>
+            <br>
+              <input type="date" name="Fecha"/>
+              <br>
+              <br>
+                <label>Contraseña:</label>
+                <br>
+            <input type="password" name="clave"/>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Seleccion de contacto preferida:</legend>
+                <input type="radio" name="email" value="email"/> Email
+                <input type="radio" name="Telefono" value="Telefono"/> Telefono
+                <input type="radio" name="carta" value="carta"/> Carta
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Elige tus asignaturas favoritas</legend>
+                <input type="radio" name="Aplicaciones web" value="Aplicaciones web"/> Email
+                <br>
+                <input type="radio" name="Telefono" value="Telefono"/> Telefono
+
+            </fieldset>
+        </form>
+    </body>
+
+</html>
